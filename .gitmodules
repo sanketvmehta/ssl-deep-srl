@@ -1,0 +1,4 @@
+[submodule "allennlp"]
+	path = allennlp
+	url = https://github.com/allenai/allennlp
+	branch = release-v0.7.2
