@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+*.tgz
+*.gz
+*.tar.gz
+.idea
+__pycache__/

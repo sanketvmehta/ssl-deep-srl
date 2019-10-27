@@ -2,7 +2,7 @@
 Code for "Mehta, S. V., Lee, J. Y., and Carbonell, J. (2018). Towards Semi-Supervised Learning for Deep Semantic Role Labeling. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (pp. 4958-4963).
 
 ## Requirements
-Python 3.6, PyTorch 0.4.1, AllenNLP v0.7.2
+Python 3.6, PyTorch 0.4.1, AllenNLP v0.4.1
 
 ### Setting up a virtual environment
 
@@ -35,28 +35,38 @@ sandbox dependencies required for our implementation:
     ```
 #### Installing AllenNLP from source
 
-1.  Change your directory to ``allennlp`` submodule present under the parent repo directory:
+1.  Clone ``allennlp`` with git submodule
+    ```
+    git submodule update --init
+    ```
+
+2. Checkout ``allennlp`` to ``v0.4.1``
+    ```
+    git checkout 31f4f60
+    ```
+
+3.  Change your directory to ``allennlp`` submodule present under the parent repo directory:
 
     ```
     cd ssl-deep-srl/allennlp
     ```
 
-2. Install the necessary requirement by running 
+4. Install the necessary requirement by running 
 
    ```
    INSTALL_TEST_REQUIREMENTS=true scripts/install_requirements.sh
    ```
 
-3. Once the requirements have been installed, run:
+5. Once the requirements have been installed, run:
 
    ```
    pip install --editable .
    ```
 
-4. Test AllenNLP installation by running:
+6. Test AllenNLP installation by running:
 
    ```
-   bin/allennlp test-install
+   ./scripts/verify.py
    ``` 
 That's it! You're now ready to reproduce our results.
 
