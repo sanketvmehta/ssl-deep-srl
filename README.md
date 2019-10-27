@@ -1,5 +1,5 @@
 # ssl-deep-srl
-Code for "Mehta, S. V., Lee, J. Y., and Carbonell, J. (2018). Towards Semi-Supervised Learning for Deep Semantic Role Labeling. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (pp. 4958-4963).
+Code for "Mehta, S. V., Lee, J. Y., and Carbonell, J. (2018). [Towards Semi-Supervised Learning for Deep Semantic Role Labeling](https://www.aclweb.org/anthology/D18-1538/). In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (pp. 4958-4963).
 
 ## Requirements
 Python 3.6, PyTorch 0.4.1, AllenNLP v0.4.1
